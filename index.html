@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title">
+        <div class="container">
+            <h1>LIBRARY</h1>
+        </div>
+    </div>
+
+    <header>
+        <div class="header">
+            <div class="header__container container">
+                <nav>
+                    <ul class="header__pages">
+                        <li>
+                            <button id="books" class="page" name="Books">Books</button>
+                        </li>
+                        <li>
+                            <button id="visitors" class="page" name="Visitors">Visitors</button>
+                        </li>
+                        <li>
+                            <button id="cards" class="page" name="Cards">Cards</button>
+                        </li>
+                        <li>
+                            <button id="statistics" class="page" name="Statistics">Statistics</button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <main id="app">
+        <div class="pages">
+            <!-- add classes: books__container, visitors__container -->
+            <!-- <div class=" page__container container"> -->
+                
+                    <!-- book card -->
+                    <!-- <div class="book__card">
+                        <h3>Аэропорт</h3>
+                        <p>Артур Хэйли(1967 г.)</p>
+                        <p>Количество книг: 5</p>
+                        <div class="book__card__buttons">
+                            <button>Изменить</button>
+                            <button>Удалить</button>
+                        </div>
+                    </div> -->
+                
+                
+                
+                    <!-- visitor card -->
+                    <!-- <div class="visitor__card">
+                        <p>Имя: Alex</p>
+                        <p>Телефон: +64564345</p>
+                        <div class="visitor__card__buttons">
+                            <button>Изменить</button>
+                            <button>Удалить</button>
+                        </div>
+                    </div> -->
+                
+
+                
+                    <!-- card -->
+                    <!-- <div class="card">
+                        <p>Имя: Alex</p>
+                        <p>Книга: Аэропорт</p>
+                        <p>Дата выдачи: 12.11.2022</p>
+                        <p>Дата отдачи: 15.11.2022</p>
+                        <button>Вернуть</button>
+                    </div> -->
+                
+            <!-- </div> -->
+        </div>
+    </main>
+
+
+    <div class="modal">
+        <div class="modal__box">
+            <div class="modal__close"><span></span><span></span></div>
+            <div class="modal__container">
+                <div class="modal__output">
+                    
+                    <!-- New book form -->
+                    
+                    <!-- <h3>New Book: </h3>
+                    <form class="book__create__form">
+                        <label>
+                            Book name:
+                            <input type="text" placeholder="Name" id="bookNameInput"/>
+                        </label>
+                        <label>
+                            Author:
+                            <input type="text" placeholder="Author" id="bookAuthorInput"/>
+                        </label>
+                        <label>
+                            Book year:
+                            <input type="date" placeholder="Year" id="bookYearInput"/>
+                        </label>
+                        <label>
+                            Book quantity:
+                            <input type="number" min="1" max="999" maxlength="5" placeholder="Quantity" class="quantity" id="bookQuanityInput"/>
+                        </label>
+                        <button class="book__create__form__button" type="submit">Save</button>
+                    </form> -->
+
+                    <!-- Book edit form -->
+
+                    <!-- <h3>Edit Book: </h3>
+                    <form class="book__create__form">
+                        <label>
+                            Book name:
+                            <input type="text" placeholder="Name" id="bookNameInput"/>
+                        </label>
+                        <label>
+                            Author:
+                            <input type="text" placeholder="Author" id="bookAuthorInput"/>
+                        </label>
+                        <label>
+                            Book year:
+                            <input type="date" placeholder="Year" id="bookYearInput"/>
+                        </label>
+                        <label>
+                            Book quantity:
+                            <input type="number" value="1" min="1" max="999" maxlength="5" class="quantity" id="bookQuanityInput"/>
+                        </label>
+                        <button class="book__create__form__button" type="submit">Save</button>
+                    </form> -->
+                    
+                    <!-- Visitor Form -->
+                    
+                    <!-- <h3>Edit visitor: </h3>
+                    <form class="visitor__form">
+                        <label>
+                            Full name:
+                            <input type="text" placeholder="Collete Kelley" id="fullnameInput"/>
+                        </label>
+                        <label>
+                            Phone number:
+                            <input type="tel" placeholder="012-435-45-67" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" id="telInput"/>
+                        </label>
+                        <button class="visitor__form__button" type="submit">Save</button>
+                    </form> -->
+
+
+
+                    <!-- Card form -->
+
+                    <!-- <h3>New card: </h3>
+                    <form class="card__form">
+                        <label>
+                            Visitor:
+                            <select name="visitors" id="visitorSelect"></select>
+                        </label>
+                        <label>
+                            Book:
+                            <select name="books" id="bookSelect"></select>
+                        </label>
+                        <button class="visitor__form__button" type="submit">Save</button>
+                    </form> -->
+                </div>
+                <p class="modal__subtitle"></p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="./js/data.js"></script>
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
